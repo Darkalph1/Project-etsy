@@ -1,0 +1,222 @@
+:root{
+    --font-fam: -apple-system, BlinkMacsystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica", Arila, sans-serif;
+}
+
+/* base styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #222;
+    font-family: -apple-system, BlinkMacsystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica", Arila, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.btn{
+    border: none;
+    background: none;
+}
+
+/* header 375px */
+
+.header-wrapper-375px{
+    position: relative;
+    display: block;
+    padding: 0 12px;
+    border-bottom: none;
+}
+
+.header-wrapper-1-375px{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.etsy-logo-wrapper{
+    display: inline-block;
+    position: relative;
+    right: 3px;
+    top: 1px;
+    padding-bottom: 6px;
+    /* align-self: flex-start; */
+    flex: 0 0 60px;
+}
+
+.etsy-link-icon-wrapper{
+    background: transparent;
+    cursor: pointer;
+    /* width: 50px; */
+}
+
+.etsy-logo-wrapper-1{
+    width: 60px;
+    height: 30px;
+    fill: #F1641E;
+}
+
+.top-navigation-wrapper{
+    flex: 0 0 170px;
+}
+
+.nav-items-list{
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    align-items: center;
+    list-style-type: none;
+}
+
+
+.nav-sign-in-wrapper{
+    flex: 1 0 40%;
+}
+
+.sign-in-btn{
+    color: #222;
+    font-size: 13px;
+    min-width: 36px;
+    min-height: 36px;
+    padding: 9px 15px;
+    /* font-family: -apple-system, BlinkMacsystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica", Arila, sans-serif; */
+}
+
+.nav-fav-wrapper{
+    flex: 0 0 20%;
+}
+
+.nav-fav-wrapper-1{
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+}
+
+.nav-basket-wrapper{
+    flex: 0 0 20%;
+}
+
+.nav-basket-wrapper-1{
+    position: relative;
+    display: inline-block;
+}
+
+.nav-basket-link-wrapper{
+    padding: 12px;
+    color: black;
+}
+
+.nav-basket-icon-wrapper{
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+}
+
+.search-bar-menu-wrapper{
+    display: flex;
+    width: 100%;
+    flex: 0 0 100%;
+    order: 1;
+}
+
+.menu-btn{
+    margin-left: -12px;
+    padding: 12px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+
+.menu-icon{
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+}
+
+.search-bar-wrapper{
+    flex: 1 1 0%;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.search-bar-from-wrapper{
+    position: relative;
+    display: flex;
+}
+
+.search-bar-wrapper-in-form{
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.search-bar-wrapper-in-form-1{
+    display: flex; 
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: rgba(34, 34, 34, 0.05);
+    position: relative;
+    border-radius: 96px;
+    box-shadow: 1px 2px 4px 0 rgb(34 34 34 / 10%) inset;
+}
+
+.search-bar-wrapper-in-form-1 input{
+    padding: 9px 26px 9px 18px;
+    font-size: 16px;
+    font-family: var(--font-fam);
+    line-height: 28px;
+    border-width: 2px;
+    border-color: #222;
+    border-top-left-radius: 96px;
+    border-bottom-left-radius: 96px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 48px;
+    border-right: 0;
+    box-shadow: none;
+    background: transparent;
+    flex: 1;
+}
+
+.search-icon-btn-wrapper{
+    display: inline-block;
+    border-width: 2px;
+    border-color: #222;
+    background: none;
+    position: relative;
+    padding-right: 21px;
+    padding-left: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    height: 48px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 96px;
+    border-bottom-right-radius: 96px;
+    border: 2px solid rgba(34, 34, 34, 1);
+    border-left: 0;
+}
+
+.serch-icon-wrapper{
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+
+    position: relative;
+    bottom: 2px;
+    right: 1px;
+}
