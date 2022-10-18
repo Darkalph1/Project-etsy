@@ -27,7 +27,6 @@ body{
 .header-wrapper-375px{
     position: relative;
     display: block;
-    padding: 0 12px;
     border-bottom: none;
 }
 
@@ -35,45 +34,69 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+
 }
 
 .etsy-logo-wrapper{
-    display: inline-block;
+    display: flex;
     position: relative;
     right: 3px;
     top: 1px;
     padding-bottom: 6px;
-    /* align-self: flex-start; */
-    flex: 0 0 60px;
+    width: 60px;
+    height: 48px;
+    /* flex: 0 0 60px; */
 }
 
 .etsy-link-icon-wrapper{
+    display: flex;
     background: transparent;
     cursor: pointer;
     /* width: 50px; */
 }
 
 .etsy-logo-wrapper-1{
+    display: flex;
+    align-items: center;
+    /* height: 300px; */
+}
+
+.etsy-logo-wrapper-1 svg{
     width: 60px;
     height: 30px;
     fill: #F1641E;
 }
 
 .top-navigation-wrapper{
-    flex: 0 0 170px;
+    /* display: flex; */
+    line-height: 1.4;
+    /* flex: 0 0 170px; */
+    margin-bottom: 1px;
+    height: 48px;
+}
+
+.nav-wrapper{
+    display: block;
+    /* flex: 0 0 100%; */
 }
 
 .nav-items-list{
     display: flex;
+    flex: 0 0 100%;
     padding-left: 0;
     margin: 0;
+    justify-content: space-between;
     align-items: center;
     list-style-type: none;
 }
 
 
 .nav-sign-in-wrapper{
-    flex: 1 0 40%;
+    display: list-item;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+
 }
 
 .sign-in-btn{
@@ -82,23 +105,51 @@ body{
     min-width: 36px;
     min-height: 36px;
     padding: 9px 15px;
-    /* font-family: -apple-system, BlinkMacsystemFont, "Roboto", "Droid Sans", "Segoe UI", "Helvetica", Arila, sans-serif; */
+    font-weight: bold;
+    line-height: 1.4;
+    margin-right: 6px;
+
+}
+
+.sign-in-btn span{
+    font-family: "Graphik Webfont",-apple-system,"Helvetica Neue","Droid Sans",Arial,sans-serif;
+        
 }
 
 .nav-fav-wrapper{
-    flex: 0 0 20%;
+    display: list-item;
+    margin-bottom: 2px;
 }
 
 .nav-fav-wrapper-1{
+    display: inline-block;
+    position: relative;
+    
+}
+
+.nav-fav-link-wrapper{
+    display: inline-block;
+    color: #222;
+    font-weight: bold;
+    min-height: 48px;
+    min-width: 48px;
+    margin-left: -2px;
+    margin-right: -2px;
+    line-height: 1;
+    padding: 12px;
+}
+
+.nav-fav-icon-wrapper{
     display: inline-block;
     fill: currentColor;
     height: 24px;
     width: 24px;
     vertical-align: middle;
+
 }
 
 .nav-basket-wrapper{
-    flex: 0 0 20%;
+    display: list-item;
 }
 
 .nav-basket-wrapper-1{
@@ -107,8 +158,15 @@ body{
 }
 
 .nav-basket-link-wrapper{
+    display: inline-block;
+    color: #222;
+    font-weight: bold;
+    min-height: 48px;
+    min-width: 48px;
+    vertical-align: center;
     padding: 12px;
-    color: black;
+    line-height: 1;
+
 }
 
 .nav-basket-icon-wrapper{
@@ -116,8 +174,14 @@ body{
     fill: currentColor;
     height: 24px;
     width: 24px;
-    vertical-align: middle;
+    vertical-align: middle;   
 }
+
+.nav-basket-icon-wrapper svg{
+    transform: translate3d(0, -1px, 0);
+}
+
+
 
 .search-bar-menu-wrapper{
     display: flex;
@@ -132,6 +196,8 @@ body{
     cursor: pointer;
     margin-bottom: 12px;
     font-size: 16px;
+    min-width: 48px;
+    min-height: 48px;
 }
 
 
@@ -175,7 +241,7 @@ body{
 .search-bar-wrapper-in-form-1 input{
     padding: 9px 26px 9px 18px;
     font-size: 16px;
-    font-family: var(--font-fam);
+    font-family: "Graphik Webfont",-apple-system,"Helvetica Neue","Droid Sans",Arial,sans-serif;
     line-height: 28px;
     border-width: 2px;
     border-color: #222;
@@ -189,6 +255,10 @@ body{
     background: transparent;
     flex: 1;
 }
+
+/* .search-bar-wrapper-in-form-1 input::-webkit-input-placeholder{
+    font-family: "Graphik Webfont",-apple-system,"Helvetica Neue","Droid Sans",Arial,sans-serif;
+} */
 
 .search-icon-btn-wrapper{
     display: inline-block;
